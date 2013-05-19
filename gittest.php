@@ -44,12 +44,12 @@ fb($_GET);
  
  
  $ch = curl_init();
- // User-Agent: bow-github (bow-github api v0.1.0) (http://bowc.programdesign.no/gt)
+ // User-Agent: bow-github (bow-github api v0.1.0) (http://example.net/importer)
  //set the url, number of POST vars, POST data
  curl_setopt($ch,CURLOPT_URL, $gitURL.'?'.$fieldstring);
  curl_setopt($ch,CURLOPT_HTTPGET, true);
  curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
- curl_setopt($ch,CURLOPT_USERAGENT, 'bow-github (bow-github api v0.1.0) (http://bowc.programdesign.no/gt)');
+ curl_setopt($ch,CURLOPT_USERAGENT, 'bow-github (bow-github api v0.1.0) (http://example.net/importer)');
 
  //curl_setopt($ch,CURLOPT_POSTFIELDS, $fieldstring);
  fb("Before execute"); 
